@@ -16,24 +16,23 @@ minify:
 
 params:
     env: production
-    title: ExampleSite
-    description: "ExampleSite description"
+    title: Scientific Investing Blog
+    description: Get evidence-based answers to common investing questions.
     keywords: [Blog, Portfolio, PaperMod]
-    author: Me
-    # author: ["Me", "You"] # multiple authors
-    images: ["<link or path of image for opengraph, twitter-cards>"]
+    author: Manu
+    # images: ["<link or path of image for opengraph, twitter-cards>"]
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
     disableThemeToggle: false
 
-    ShowReadingTime: true
+    ShowReadingTime: false
     ShowShareButtons: true
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: false
     disableSpecial1stPost: false
     disableScrollToTop: false
-    comments: false
+    comments: true
     hidemeta: false
     hideSummary: false
     showtoc: false
@@ -42,21 +41,21 @@ params:
     assets:
         # disableHLJS: true # to disable highlight.js
         # disableFingerprinting: true
-        # favicon: "<link / abs url>"
+        favicon: "/thinking.png"
         # favicon16x16: "<link / abs url>"
         # favicon32x32: "<link / abs url>"
         # apple_touch_icon: "<link / abs url>"
         # safari_pinned_tab: "<link / abs url>"
 
     label:
-        text: "Home"
-        icon: /apple-touch-icon.png
-        iconHeight: 35
+        text: "Scientific Investing Blog"
+        # icon: /apple-touch-icon.png
+        # iconHeight: 35
 
     # home-info mode
     homeInfoParams:
-        Title: "Scientific Investing Blog"
-        Content: Get evidence-based answers to the most common investing questions.
+        Title: "Scientific Investing Blog 🧪💰"
+        Content: Get evidence-based answers to common investing questions.
 
     # socialIcons:
     #     - name: twitter
@@ -91,17 +90,20 @@ params:
         keys: ["title", "permalink", "summary", "content"]
 menu:
     main:
-        - identifier: categories
-          name: categories
-          url: /categories/
+        - identifier: about
+          name: About
+          url: /about/
           weight: 10
-        - identifier: tags
-          name: tags
-          url: /tags/
-          weight: 20
-        - identifier: example
-          name: example.org
-          url: https://example.org
+        # - identifier: categories
+        #   name: Categories
+        #   url: /categories/
+        #   weight: 20
+        - name: Search
+          url: search/
+          weight: 10
+        - identifier: contribute
+          name: ✍️ Contribute
+          url: https://github.com/m3nu/scientific-investing.com
           weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
